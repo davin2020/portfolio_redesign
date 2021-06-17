@@ -17,6 +17,18 @@ body {
 	line-height: 1.4rem;
 }
 
+details summary { 
+  cursor: pointer;
+  /* will show little twisty arrow next to item */
+  display:list-item;
+  /*doesnt show little arrow next to item */
+  /*display: flex; */
+}
+
+details summary > * {
+  display: inline;
+}
+
 .mainContainerGrid {
 	/*margin-left: 5px*/
 }
