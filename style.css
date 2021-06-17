@@ -1,3 +1,9 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');*/
+/*<style>*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+/*</style>*/
+
+
 * {
 	box-sizing: border-box;
 }
@@ -28,16 +34,20 @@ main {
 
 header {
 	text-align: center;
-	font-size: 1.2rem;
+	/*font-size: 1.2rem;*/
 }
 
 nav {
-	padding: 32px;
+	padding: 20px;
 	background-color: #400068 ;
 	color: #FFFFFF;
-	font-family: 'Courier New', 'AppleChancery','LucidaCallig','ITC Zapf Chancery','URW Chancery L',cursive;
-	font-size: 175%;
+	font-family: 'Ubuntu Mono', monospace;
+	/*font-family: 'Courier New', 'AppleChancery','LucidaCallig','ITC Zapf Chancery','URW Chancery L',cursive;*/
+	/*font-size: 175%;*/
 	font-weight: bold;
+	/*font looks squahsed when i set size in nav rather than in nav a*/
+	/*font-size: 2.3rem;*/
+	/*letter-spacing: 0.1rem;*/
 	/* maybe add some kerning and more line height than in body */
 	/*this helps items on 2 lines not be on top of each other! */
 	/*line-height: 2rem;*/ 
@@ -48,6 +58,8 @@ nav a {
 	padding: 15px;
 	color: #E8EBD0  ;
 	text-decoration: none;
+	letter-spacing: 0.2rem;
+	font-size: 2rem;
 	/*text-align: center;*/
 }
 
@@ -55,14 +67,28 @@ nav a:hover {
 	background-color: #170B3B ;
 }
 
+h1 {
+	font-size: 4rem;
+	letter-spacing: 0.1rem;
+	color: #E8EBD0;
+	font-family: 'Ubuntu Mono', monospace;
+	font-weight: 700;
+}
 h2 {
 	margin: 0;
 	padding: 15px 0;
-	font-size: 2rem;
+	font-size: 2.3rem;
 	letter-spacing: 0.1rem;
 	color: #400068;
+	font-family: 'Ubuntu Mono', monospace;
+	/*font-size: 700;*/
+	font-weight: 700;
 }
-
+.subtitle {
+	color: #E8EBD0;
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 1.7rem;
+}
 section {
 	/*border: 1px solid green;*/
 }
@@ -70,6 +96,15 @@ section {
 div {
 	/*border: 2px solid blue;*/
 }
+
+.layout__title {
+	width: 100%;
+	background-color: #400068   ;
+	padding: 10px;
+	margin-top: 10px;
+	/*margin: 10px;*/
+}
+
 
 .section_parent {
 	display: flex;
