@@ -1,0 +1,198 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');*/
+/*<style>*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+/*</style>*/
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #E8EBD0 ;
+	font-family: Verdana;
+	font-size: 1rem;
+	line-height: 1.4rem;
+}
+
+.mainContainerGrid {
+	/*margin-left: 5px*/
+}
+@media screen and (min-width: 1080px) {
+	.mainContainerGrid {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+main {
+	/*border: 2px solid yellow;*/
+	margin-left: 10px
+}
+
+header {
+	text-align: center;
+	/*font-size: 1.2rem;*/
+}
+
+nav {
+	padding: 20px;
+	background-color: #400068 ;
+	color: #FFFFFF;
+	font-family: 'Ubuntu Mono', monospace;
+	/*font-family: 'Courier New', 'AppleChancery','LucidaCallig','ITC Zapf Chancery','URW Chancery L',cursive;*/
+	/*font-size: 175%;*/
+	font-weight: bold;
+	/*font looks squahsed when i set size in nav rather than in nav a*/
+	/*font-size: 2.3rem;*/
+	/*letter-spacing: 0.1rem;*/
+	/* maybe add some kerning and more line height than in body */
+	/*this helps items on 2 lines not be on top of each other! */
+	/*line-height: 2rem;*/ 
+
+}
+
+nav a {
+	padding: 15px;
+	color: #E8EBD0  ;
+	text-decoration: none;
+	letter-spacing: 0.2rem;
+	font-size: 2rem;
+	/*text-align: center;*/
+}
+
+nav a:hover {
+	background-color: #170B3B ;
+}
+
+h1 {
+	font-size: 4rem;
+	letter-spacing: 0.1rem;
+	color: #E8EBD0;
+	font-family: 'Ubuntu Mono', monospace;
+	font-weight: 700;
+}
+h2 {
+	margin: 0;
+	padding: 15px 0;
+	font-size: 2.3rem;
+	letter-spacing: 0.1rem;
+	color: #400068;
+	font-family: 'Ubuntu Mono', monospace;
+	/*font-size: 700;*/
+	font-weight: 700;
+}
+.subtitle {
+	color: #E8EBD0;
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 1.7rem;
+}
+section {
+	/*border: 1px solid green;*/
+}
+
+div {
+	/*border: 2px solid blue;*/
+}
+
+.layout__title {
+	width: 100%;
+	background-color: #400068   ;
+	padding: 10px;
+	margin-top: 10px;
+	/*margin: 10px;*/
+}
+
+
+.section_parent {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: space-around;
+	width: 100%;
+}
+.section_child {
+	position: relative;
+	/*padding: 20px;*/ /* pad within item */
+	margin: 20px; /* space arou nd/between other items */
+	flex: 1 1 260px;
+	text-align: center;
+
+	/* need this to flex & center items, so that tech icons stay at bottom */
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* need this as some pics in flex are not being centered properly */
+	
+}
+
+/* perhaps add an arrow pointing right at end of each separator? */
+.visual-separator {
+		/*border: 5px solid #000000;  1C384A */
+		border-top: 10px solid #400068;
+		/*width: 80%;*/
+		align-items: center;
+		align-content: center;
+		align-self: center;
+		/*this only gives space above teh separator itself, so maybe need to place it insdie its own div?*/
+		margin: 10px 0px;
+		/*text-align: center;*/
+		/*margin-bottom: 10px;*/
+}
+
+.width_30 {
+	width: 30%;
+}
+.width_50 {
+	width: 50%;
+}
+.width_70 {
+	width: 70%;
+}
+.width_90 {
+	width: 90%;
+}
+
+/*
+or try names like
+box_image
+box_title x2 
+box_blurb or box_content x2
+box_icons
+
+or call it border1, borderRBL, as will need vert dividers in contact box & tech icons
+*/
+.box_basic_top {
+	border: 3px solid #400068;
+	width: 100%;
+	padding: 15px;
+}
+.box_basic {
+	border-left: 3px solid #400068;
+	border-right: 3px solid #400068;
+	border-bottom: 3px solid #400068;
+	/*border: 2px solid #400068;*/
+	width: 100%;
+	padding: 15px;
+	/*border-top: 0px solid black;*/
+}
+.box_blurb {
+
+}
+
+.box_project {
+
+}
+
+footer {
+	text-align: center;
+	padding: 15px ;
+	font-size: 80%;
+	background-color: #400068;
+	color: #E8EBD0  ;
+}
+footer a {
+	color: #E8EBD0  ;
+	text-decoration: none;
+}
