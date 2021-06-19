@@ -15,6 +15,7 @@ body {
 	font-family: Verdana;
 	font-size: 0.9rem;
 	line-height: 1.4rem;
+	color: #400068;
 }
 
 
@@ -114,6 +115,12 @@ h2 {
 	/*font-size: 700;*/
 	font-weight: 700;
 }
+h3 {
+	font-size: 1.7rem;
+	margin: 10px;
+	/*padding: 15px 0;*/
+}
+
 .subtitle {
 	color: #E8EBD0;
 	font-family: 'Ubuntu Mono', monospace;
@@ -191,7 +198,7 @@ div {
 }
 
 .portfolio-images {
-	max-width: 90%;
+	max-width: 95%;
 	border-radius: 10px;
 	/* show a transparent border around clickable images */
 	border: 5px solid rgba(87, 24, 103, 0);
