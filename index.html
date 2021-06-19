@@ -37,11 +37,12 @@
 			</section> -->
 
 			<!-- Section: MyName & Background Picture -->
-			<section class="layout__title2">
+			<!-- <section class="layout__title2">
 				<h2 class="section__title ">Title</h2>
-			</section>
+			</section> -->
+
 			
-			<div class="visual-separator width_30"> </div>
+			<div class="visual-separator width_20"> </div>
 
 <!-- Section About Me -->
 			<section class="layout__about-me">
@@ -59,31 +60,28 @@ can i add aria to h2 instead? . -->
 						basic
 					</div> -->
 
-					<div class="section_child">
+					<!-- <div class="section_child">
 						<div class="box_basic_top">Background
 						</div>
 						<div class="box_basic">IT Professional with over 12 years experience pivoting into web development
-
 						</div>
-					</div>
+					</div> -->
 
 					<div class="section_child">
 						<div class="box_basic_top">Background
 						</div>
 						<div class="box_basic">
-							<p>Experienced IT Professional, pivoting into web development with an interest in backend technologies</p>
+							<p>IT Professional with over 12 years experience pivoting into web development</p>
 
-							<p>Entitled to work in the UK & NZ, with over 12 years IT industry experience across both countries</p>
+							<p>Interested in backend technologies and APIs like GraphQL.
 
-							<p>Open to new opportunities, from January 2021 - here's my Developer CV</p>
-						</div>
-					</div>
-					
-					<!-- maybe look at how the craft agency site does their boxes? -->
-					<div class="section_child">
-						<div class="box_basic_top">Interests
-						</div>
-						<div class="box_basic">Interested in travelling, sci-fi shows, good design, architecture & psychology, and have experience in making short films
+							<p>Eligible to work in the UK, where I'm currently based, and also in New Zealand</p>
+
+							<!-- Experienced IT Professional, pivoting into web development with an interest in backend technologies</p> -->
+
+							<!-- <p>Entitled to work in the UK & NZ, with over 12 years IT industry experience across both countries</p> -->
+
+							<p>Open to new opportunities in 2021 - here's my Developer CV</p>
 						</div>
 					</div>
 
@@ -98,12 +96,21 @@ can i add aria to h2 instead? . -->
 						<!-- Certificate in Applied Film-Making & TV Production -->
 						</div>
 					</div>
+					
+					<!-- maybe look at how the craft agency site does their boxes? -->
+					<div class="section_child">
+						<div class="box_basic_top">Interests
+						</div>
+						<div class="box_basic">
+							<p>Interested in good design & architecture, psychology, sci-fi shows, travelling and making short films</p>
+						</div>
+					</div>
 
 				</div>
 				</details>
 			</section>
 			
-			<div class="visual-separator width_50"> </div>
+			<div class="visual-separator width_40"> </div>
 
 <!-- Section: Portfolio-->
 			<section class="layout__portfolio">
@@ -112,7 +119,6 @@ can i add aria to h2 instead? . -->
 					<h2 class="section__title ">Portfolio</h2>
 					</summary>
 				
-
 					<div class="section_parent"> 
 
 						<!-- <div class="section_child box_basic">
@@ -143,10 +149,13 @@ can i add aria to h2 instead? . -->
 								<!-- <h3>Form to Track Wellbeing</h3> -->
 								<p>I'm interested in psychology so decided to digitise  the GP-CORE form where you can answer questions about subjective wellbeing.</p>
 								<p>CORE Forms from the <a href="https://www.coresystemtrust.org.uk/">CORE Systems Trust</a> can be used to monitor changes in wellbeing over time in health care situations. There are different versions, like <a href="https://www.coresystemtrust.org.uk/wp-content/uploads/2020/03/GP-CORE-English.pdf">GP-CORE</a> for the General Population which has 14 questions.</p>
+								<details>
+								<summary>More</summary>
 								<p>After collecting the answers on the form, and storing them in the MySQL database, I plotted the overall score on a graph using the JpGraph library.</p>
 								<p>This app is built using the Slim 4 framework and MVC pattern, and is still a work in progress.
 								During May I have restructured the app into separate pages in a feature branch, and added register/login functionality. I'm currently working on protecting the routes with sessions</p>
-								<p>My biggest challenges have been working out how to better use the graph plotting library, learning more about using Git eg cherry picking & stashing in order to resolve certain branching issues I came across, and discovering that some tech isn't meant to work together - like trying to add JWT to my project without realising its only intended for APIs and I've written a (small) monolith...</p>
+								<p>My biggest challenges have been working out how to better use the graph plotting library, learning more about using Git eg cherry picking & stashing in order to resolve certain branching issues I came across, and discovering that some tech isn't meant to work together - like trying to add JWT to my project without realising its only intended for APIs and I'd written a (small) monolith...</p>
+								</details>
 							</div>
 							<div class="box_basic">
 								<p>PHP | Slim4 | HMTL5 | CSS3 | 
@@ -204,16 +213,66 @@ can i add aria to h2 instead? . -->
 			</section>
 			
 <!-- Section: Skills-->
-			<div class="visual-separator width_70"> </div>
+			<div class="visual-separator width_60"> </div>
 
-			<section class="layout__skills ">	
-				<h2 class="section__title ">Skills</h2>
-			</section>
+<!-- <details>
+					<summary>
+					<h2 class="section__title ">Portfolio</h2>
+					</summary>
+ -->
 			
-			<div class="visual-separator width_90"> </div>
+			<section class="layout__skills ">	
+				<details>
+					<summary>
+						<h2 class="section__title ">Skills</h2>
+					</summary>
+
+					<div class="section_parent"> 
+
+						<div class="section_child">
+							<div class="box_basic_top">
+								Background
+							</div>
+							<div class="box_basic">
+								IT Professional with over 12 years experience pivoting into web development
+							</div>
+						</div>
+
+					</div>
+				</details>
+			</section>
+				
+			<div class="visual-separator width_80"> </div>
+
 <!-- Section: Contact-->
-			<section class="layout__contact-me ">
-				<h2 class="section__title ">Contact</h2>
+			<section class="layout__contact-me">	
+				<details>
+					<summary>
+						<h2 class="section__title ">Contact</h2>
+					</summary>
+
+					<div class="section_parent"> 
+
+						<!-- make svg in teal of GH logo -->
+						<div class="section_child">
+							<div class="box_basic_top">
+								Contact Details
+							</div>
+							<div class="box_basic">
+								Email & GitHub & GH Image
+							</div>
+						</div>
+
+					</div>
+				</details>
+			</section>
+				
+			
+			<div class="visual-separator width_100"> </div>
+
+<!-- Section: Contact-->
+			<!-- <section class="layout__contact-me ">
+				<h2 class="section__title ">Contact Test</h2>
 				<div class="section_parent"> 
 					<div class="section_child_row">
 						<div class="box_basic_top">
@@ -224,18 +283,19 @@ can i add aria to h2 instead? . -->
 						</div>
 						</div>
 					</div>
+
 					<div class="section_child_row">
-						<!-- <div class="box_basic_top"> -->
+						<div class="box_basic_top">
 						<div class="box_basic_top">Background
 						</div>
 						<div class="box_basic_top">sfsdfsdf Background
 						</div>
 						<div class="box_basic">IT Professional with over 12 years experience pivoting into web development
 						</div>
-						<!-- </div> -->
+						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 	
 		</main>
 
