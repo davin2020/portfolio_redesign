@@ -18,8 +18,10 @@ body {
 	color: #400068;
 }
 
+
 /*Accessible Accordion
 https://www.hassellinclusion.com/blog/accessible-accordions-part-2-using-details-summary/*/
+
 details summary { 
   cursor: pointer;
   /* will show little twisty arrow next to item */

@@ -42,10 +42,18 @@
 			</section>
 			
 			<div class="visual-separator width_30"> </div>
-			
+
 <!-- Section About Me -->
 			<section class="layout__about-me">
-				<h2 class="section__title ">About</h2>
+
+<!--  	What this means for us is that, when we place a heading inside a <summary>, we can style the heading’s appearance. But we cannot guarantee our heading will actually be interpreted as a heading!
+
+In other words, it probably doesn’t hurt to put a heading there. It just may not always help
+can i add aria to h2 instead? . -->
+				<details>
+					<summary>
+					<h2 class="section__title">About</h2>
+					</summary>
 				<div class="section_parent"> 
 					<!-- <div class="section_child box_basic_top">
 						basic
@@ -92,13 +100,18 @@
 					</div>
 
 				</div>
+				</details>
 			</section>
 			
 			<div class="visual-separator width_50"> </div>
 
 <!-- Section: Portfolio-->
 			<section class="layout__portfolio">
-				<h2 class="section__title ">Portfolio</h2>
+				<details>
+					<summary>
+					<h2 class="section__title ">Portfolio</h2>
+					</summary>
+				
 
 					<div class="section_parent"> 
 
@@ -187,7 +200,7 @@
 
 
 					</div>
-
+				</details>
 			</section>
 			
 <!-- Section: Skills-->
