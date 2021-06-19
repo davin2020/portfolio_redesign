@@ -38,8 +38,14 @@ details summary > * {
   display: inline;
 }
 
-details div {
-  border: 2px solid #fdb;
+/*
+details  div {
+	this applies padding to ALL/each div within details
+if i add the > symbol, then it applies to direct descendants only?
+*/
+
+details > div {
+  border: 2px dashed black;
   margin-top: 0;
   padding: 1rem;
 }
@@ -60,7 +66,9 @@ details div {
 
 main {
 	/*border: 2px solid yellow;*/
-	margin-left: 10px
+	margin-left: 10px;
+	margin-right: 10px;
+
 }
 
 header {
@@ -154,7 +162,7 @@ div {
 .section_child {
 	position: relative;
 	/*padding: 20px;*/ /* pad within item */
-	margin: 20px; /* space arou nd/between other items */
+	margin: 10px; /* space arou nd/between other items */
 	flex: 1 1 350px;
 	text-align: center;
 
@@ -184,14 +192,26 @@ div {
 		/*margin-bottom: 10px;*/
 }
 
+.width_20 {
+	width: 20%;
+}
 .width_30 {
 	width: 30%;
+}
+.width_40 {
+	width: 40%;
 }
 .width_50 {
 	width: 50%;
 }
+.width_60 {
+	width: 60%;
+}
 .width_70 {
 	width: 70%;
+}
+.width_80 {
+	width: 80%;
 }
 .width_90 {
 	width: 90%;
