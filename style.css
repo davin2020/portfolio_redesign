@@ -11,10 +11,12 @@
 body {
 	padding: 0;
 	margin: 0;
-	background-color: #E8EBD0 ;
+	/* beige w 5% saturuadion e9eade, with 11%  E8EBD0 original, witih 15%  e5e8c5, 20% saturaiton is e5eabb*/
+	background-color: #e9eade ;
 	font-family: Verdana;
-	font-size: 0.9rem;
-	line-height: 1.4rem;
+	font-size: 1rem;
+	/*seting thsi here make the h3 headings too close when the longer lines wrap*/
+	/*line-height: 1.4rem;*/
 	color: #400068;
 }
 
@@ -29,7 +31,7 @@ details summary {
   /*doesnt show little arrow next to item */
   /*display: flex; */
  	/*background-color: white;*/
- 	/*this changes the color of the twisty triangle */
+ 	/*this changes the color of the twisty triangle teal */
  	color: #2F8890 ;
 }
 
@@ -106,6 +108,10 @@ nav a:hover {
 	background-color: #170B3B ;
 }
 
+p {
+	line-height: 1.4rem;
+}
+
 h1 {
 	font-size: 4rem;
 	letter-spacing: 0.1rem;
@@ -124,9 +130,21 @@ h2 {
 	font-weight: 700;
 }
 h3 {
-	font-size: 1.7rem;
-	margin: 10px;
+	font-size: 1.6rem;
+	margin: 5px 0;
+	line-height: 2rem;
 	/*padding: 15px 0;*/
+}
+
+.accent {
+	color: #2F8890;
+	font-style: bold;
+	font-size: 1.4rem;
+	vertical-align: center;
+}
+.accent_bkg {
+	/*  e5e8c5 */
+	background-color: #e5e8c5;
 }
 
 .subtitle {
@@ -144,9 +162,11 @@ div {
 
 .layout__title {
 	width: 100%;
-	background-color: #400068   ;
+	background-color: #400068;
 	padding: 10px;
 	margin-top: 10px;
+	/*padding-top: 10px;*/
+	/*accent_bkg*/
 	/*margin: 10px;*/
 }
 
@@ -218,21 +238,24 @@ div {
 }
 
 .portfolio-images {
-	max-width: 95%;
-	border-radius: 10px;
-	/* show a transparent border around clickable images */
-	border: 5px solid rgba(87, 24, 103, 0);
+	max-width: 100%;
+	border-radius: 20px;
+	/* show a transparent border around clickable images, so when border is shown on hover it doesnt make text below image jump */
+	border: 8px solid rgba(87, 24, 103, 0);
 }
 a:hover .portfolio-images {
-	border-radius: 10px;
+	border-radius: 20px;
 	/* show an opaque border around clickable images on hover */
-	border: 7px solid  #2F8890;
+	border: 8px solid  #2F8890;
 	/*border: 7px solid rgba(87, 24, 103, 1);*/
 }
 
 
 /*
 or try names like
+box_border_title
+box_border_full
+box_border_rbl or box_border_right_bottom_left
 box_image
 box_title x2 
 box_blurb or box_content x2
@@ -244,11 +267,15 @@ or call it border1, borderRBL, as will need vert dividers in contact box & tech 
 	border: 3px solid #400068;
 	width: 100%;
 	padding: 15px;
+	/* beige w 5% saturuadion e9eade, with 11%  E8EBD0, witih 15%  e5e8c5, 20% saturaiton is e5eabb*/
+	
 }
 .box_basic {
-	border-left: 3px solid #400068;
 	border-right: 3px solid #400068;
 	border-bottom: 3px solid #400068;
+	border-left: 3px solid #400068;
+	
+	
 	/*border: 2px solid #400068;*/
 	width: 100%;
 	padding: 15px;
