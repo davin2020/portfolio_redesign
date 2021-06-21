@@ -6,6 +6,7 @@
   <link href="normalize.css" type="text/css" rel="stylesheet">
   <link href="style.css" type="text/css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"> -->
 
 <!--   <style>
@@ -24,11 +25,13 @@
 				<a href="#Contact">Contact</a>
 			</nav>
 
+			<div class="accent_bkg"> 
 			<section class="layout__title">
 				<h1 class="section__title ">Davin Stirling</h1>
 				<!-- <p class="subtitle">Web Developer in UK & NZ</p> -->
 				<p class="subtitle">developer, detail orientated, diverse life experience</p>
 			</section>
+			<div>
 		</header>
 
 		<main>
@@ -68,7 +71,7 @@ can i add aria to h2 instead? . -->
 					</div> -->
 
 					<div class="section_child">
-						<div class="box_basic_top">Background
+						<div class="box_basic_top accent_bkg"><h3>Background</h3>
 						</div>
 						<div class="box_basic">
 							<p>IT Professional with over 12 years experience pivoting into web development</p>
@@ -86,20 +89,18 @@ can i add aria to h2 instead? . -->
 					</div>
 
 					<div class="section_child">
-						<div class="box_basic_top">Qualifications
+						<div class="box_basic_top accent_bkg"><h3>Qualifications</h3>
 						</div>
 						<div class="box_basic">
-							<p>Certified Scrum Master</p>
-
+							<p>Certified Scrum Master - 2020</p>
+							<p>Completed intensive 16 week Full Stack Web Development Bootcamp - 2020</p>
 							<p>BSc (Hons) in Computer Science integrated with IBM UK</p>
-
-						<!-- Certificate in Applied Film-Making & TV Production -->
 						</div>
 					</div>
 					
 					<!-- maybe look at how the craft agency site does their boxes? -->
 					<div class="section_child">
-						<div class="box_basic_top">Interests
+						<div class="box_basic_top accent_bkg"><h3>Interests</h3>
 						</div>
 						<div class="box_basic">
 							<p>Interested in good design & architecture, psychology, sci-fi shows, travelling and making short films</p>
@@ -134,7 +135,7 @@ can i add aria to h2 instead? . -->
 						</div> -->
 
 						<div class="section_child">
-							<div class="box_basic_top">
+							<div class="box_basic_top accent_bkg">
 								<h3>Form to Track Wellbeing</h3>
 							</div>
 							<div class="box_basic">
@@ -150,6 +151,7 @@ can i add aria to h2 instead? . -->
 								<p>I'm interested in psychology so decided to digitise  the GP-CORE form where you can answer questions about subjective wellbeing.</p>
 								<p>CORE Forms from the <a href="https://www.coresystemtrust.org.uk/">CORE Systems Trust</a> can be used to monitor changes in wellbeing over time in health care situations. There are different versions, like <a href="https://www.coresystemtrust.org.uk/wp-content/uploads/2020/03/GP-CORE-English.pdf">GP-CORE</a> for the General Population which has 14 questions.</p>
 								<details>
+									<!-- MORE in TEAL doesnt stand out so well, try making teal darker? 3.4 for Ally, but WAVE doesnt work on localhost atm!  -->
 								<summary>More</summary>
 								<p>After collecting the answers on the form, and storing them in the MySQL database, I plotted the overall score on a graph using the JpGraph library.</p>
 								<p>This app is built using the Slim 4 framework and MVC pattern, and is still a work in progress.
@@ -158,8 +160,15 @@ can i add aria to h2 instead? . -->
 								</details>
 							</div>
 							<div class="box_basic">
-								<p>PHP | Slim4 | HMTL5 | CSS3 | 
-								<a href="http://bit.ly/ghCOREmvc" target="_blank"  aria-label="Link to GitHub Repo for Wellbeing Tracking Form">GitHub Repo
+								<p>PHP 
+									<span class="accent">|</span> 
+									Slim4 
+									<span class="accent">|</span> 
+									HMTL5 
+									<span class="accent">|</span> 
+									CSS3 
+									<span class="accent">|</span>
+								<a href="http://bit.ly/ghCOREmvc" target="_blank"  aria-label="Link to GitHub Repo for Wellbeing Tracking Form">GitHub&nbspRepo
 									<i class="fab fa-github-square fa-3x" title="Wellbeing Tracking Form Repo"></i>
 								</a>
 								</p>
@@ -169,7 +178,7 @@ can i add aria to h2 instead? . -->
 						<div class="section_child">
 							<!-- <div class="box_basic_top">image here
 							</div> -->
-							<div class="box_basic_top"><h3>Space Flight Booking Site</h3>
+							<div class="box_basic_top accent_bkg"><h3>Space Flight Booking Site</h3>
 							</div>
 							<div class="box_basic">
 								<a href="wellbeing/default.html" target="_blank">
@@ -183,9 +192,15 @@ can i add aria to h2 instead? . -->
 								<p>I want to finish my take on the site by adding suitable booking success & failure images and making them appear & disappear at the right time.</p>
 							</div>
 							<div class="box_basic">
-								<p>JavaScript | HMTL5 | CSS3 | 
-								<a href="https://github.com/davin2020/mini_hack_space" target="_blank"  aria-label="Link to GitHub Repo for Space Flight Booking Site">GitHub Repo
+								<p>JavaScript 
+								<span class="accent">|</span>
+								HMTL5
+								<span class="accent">|</span>
+								CSS3
+								<span class="accent">|</span> 
+								<a href="https://github.com/davin2020/mini_hack_space" target="_blank"  aria-label="Link to GitHub Repo for Space Flight Booking Site">GitHub&nbspRepo
 									<i class="fab fa-github-square fa-3x" title="Wellbeing Tracking Form Repo"></i>
+									<!-- add GH logo but keep words -->
 								</a>
 								</p>
 							</div>
@@ -200,6 +215,20 @@ can i add aria to h2 instead? . -->
 								sdflsdfhlkdsjf sdfkshdfjksdhf ds skdfsdkfysiduf  sdfkjsdgo;idg;pt perldf djkvzldkfdsidf 
 							</div>
 							<div class="box_basic">Tech & GH Icons
+								<p>PHP 
+									<span class="accent">|</span>
+									Slim4 
+									<span class="accent">|</span>
+									HMTL5 
+									<span class="accent">|</span> 
+									CSS3 
+									<span class="accent">|</span> 
+								<a href="http://bit.ly/ghCOREmvc" target="_blank"  aria-label="Link to GitHub Repo for Wellbeing Tracking Form">GitHub&nbspRepo
+									<i class="fab fa-github-square fa-3x" title="Wellbeing Tracking Form Repo"></i>
+								</a>
+								</p>
+
+								<br>
 								<div class="box_basic_top">PHP
 								</div>
 								<div class="box_basic_top">JS
@@ -231,11 +260,48 @@ can i add aria to h2 instead? . -->
 
 						<div class="section_child">
 							<div class="box_basic_top">
-								Background
+								<!-- <img src="images/screenshot_core_gp.png" alt="Screenshot of Wellbeing Tracking Form website" class="portfolio-images"> -->
+
+								<!-- <img src="images/davin_skills_cloud.png" class="portfolio-images"> -->
+
+								<img src="images/davin_skills_cloud2.png" class="portfolio-images">
+								
+								<!-- <img src="images/davin_skills_cloud3.png" class="portfolio-images"> -->
+								
 							</div>
-							<div class="box_basic">
-								IT Professional with over 12 years experience pivoting into web development
-							</div>
+							<div class="box_basic accent_bkg">
+LAMP
+<span class="accent">|</span>
+MERN
+<span class="accent">|</span>
+PHP7 including PHPUnit & Slim
+<span class="accent">|</span>
+JavaScript ES6 including Express
+<span class="accent">|</span>
+Node.js & React
+<span class="accent">|</span>
+GraphQL API
+<span class="accent">|</span>
+RESTful APIs & Postman
+<span class="accent">|</span>
+MongoDB & Compass & Atlas
+<span class="accent">|</span>
+MySQL
+<span class="accent">|</span>
+HTML5
+<span class="accent">|</span>
+CSS3
+<span class="accent">|</span>
+OOP,&nbspSOLID & MVC design
+principles
+<span class="accent">|</span>
+Git & GitHub
+<span class="accent">|</span>
+Docker
+<span class="accent">|</span>
+Scrum & Agile
+							</div>	
+							
 						</div>
 
 					</div>
@@ -253,9 +319,11 @@ can i add aria to h2 instead? . -->
 
 					<div class="section_parent"> 
 
-						<!-- make svg in teal of GH logo -->
+						<!-- make svg in teal of GH logo 
+						see how original site does boxes
+						-->
 						<div class="section_child">
-							<div class="box_basic_top">
+							<div class="box_basic_top accent_bkg">
 								Contact Details
 							</div>
 							<div class="box_basic">
@@ -267,7 +335,7 @@ can i add aria to h2 instead? . -->
 				</details>
 			</section>
 				
-			
+			<!-- could make divider same color as bkg if need more bottom margin only? -->
 			<div class="visual-separator width_100"> </div>
 
 <!-- Section: Contact-->
