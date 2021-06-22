@@ -300,3 +300,20 @@ footer a {
 	color: #E8EBD0  ;
 	text-decoration: none;
 }
+
+/* svg of my GH logo/avatar */
+.logo_container {
+	background-color: white;
+	width: 350px;
+	border: 4px solid #2F8890;
+}
+.logo_fill {
+	fill: #2F8890;
+}
+.logo_negative {
+	fill: white;
+}
+
+.square {
+
+}
