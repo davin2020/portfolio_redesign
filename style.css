@@ -112,6 +112,25 @@ p {
 	line-height: 1.4rem;
 }
 
+/*margin isnt affecting anyting visualy, not sure why - pading isnt doing much either, only box_basic css is being applied  */
+.contactme {
+	font-size: 1.2rem;
+	color: #400068;
+	padding: 15px;
+	/*margin: 10px;*/
+	text-decoration: none;
+	display: block;
+}
+.contactme:hover {
+	/*font-size: 1.2rem;*/
+	/*color: #E8EBD0;*/
+	background-color: #2F8890 ;
+	padding: 15px;
+	/*margin: 10px;*/
+	color: #E8EBD0 ;
+	text-decoration: none;
+}
+
 h1 {
 	font-size: 4rem;
 	letter-spacing: 0.1rem;
@@ -157,7 +176,8 @@ section {
 }
 
 div {
-	/*border: 2px solid blue;*/
+	/*padding: 0px;*/
+	/*border: 2px solid yellow;*/
 }
 
 .layout__title {
@@ -170,7 +190,33 @@ div {
 	/*margin: 10px;*/
 }
 
+/* still need some MQ for these for smaller screens, otherwise logo overflows, need to shrink instead of overflow=hidden, other options dont work well either!  - need to make pattern boxes hidden, or maybe make the wholel left side a flex instead of a grid?
 
+call one of the classes pattenr or art and collapse the pattern on MQ with narrow browsers etc
+ */
+.section_parent_col_4060 {
+	display: grid;
+	/*flex-wrap: wrap;*/
+	/*justify-content: space-evenly;*/
+	/*align-content: space-around;*/
+	/*width: 100%;*/
+	border: 1px red solid;
+	/*display: grid;*/
+  	grid-template-columns: 40% 60%;
+  	padding: 0px;
+}
+.section_parent_col {
+	/* flex seems better than grid here ? */
+	display: flex;
+	/*flex-wrap: wrap;*/
+	/*justify-content: space-evenly;*/
+	/*align-content: space-around;*/
+	/*width: 100%;*/
+	border: 1px red solid;
+	/*display: grid;*/
+  	grid-template-columns: 70% 30%;
+  	padding: 0px;
+}
 .section_parent {
 	display: flex;
 	flex-wrap: wrap;
@@ -196,6 +242,22 @@ div {
 	position: relative;
 	display: grid;
 	flex-direction: row;
+}
+
+.section_child_col {
+	position: relative;
+	display: grid;
+	flex-direction: column;
+	grid-template-columns: 50% 50%;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.column {
+  flex: 50%;
 }
 
 /* perhaps add an arrow pointing right at end of each separator? */
@@ -263,6 +325,15 @@ box_icons
 
 or call it border1, borderRBL, as will need vert dividers in contact box & tech icons
 */
+
+.box_basic_top_contact {
+	border: 3px solid blue;
+	width: 100%;
+	padding: 15px 5px;
+	/* beige w 5% saturuadion e9eade, with 11%  E8EBD0, witih 15%  e5e8c5, 20% saturaiton is e5eabb*/
+	overflow: none;
+	
+}
 .box_basic_top {
 	border: 3px solid #400068;
 	width: 100%;
