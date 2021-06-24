@@ -47,7 +47,7 @@ if i add the > symbol, then it applies to direct descendants only?
 */
 
 details > div {
-  border: 2px dashed black;
+  /*border: 2px dashed black;*/
   margin-top: 0;
   padding: 1rem;
 }
@@ -114,7 +114,7 @@ p {
 
 /*margin isnt affecting anyting visualy, not sure why - pading isnt doing much either, only box_basic css is being applied  */
 .contactme {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	color: #400068;
 	padding: 15px;
 	/*margin: 10px;*/
@@ -132,16 +132,17 @@ p {
 }
 
 h1 {
-	font-size: 4rem;
+	font-size: 4.2rem;
 	letter-spacing: 0.1rem;
 	color: #E8EBD0;
 	font-family: 'Ubuntu Mono', monospace;
 	font-weight: 700;
+	margin: 40px 10px;
 }
 h2 {
 	margin: 10px;
 	padding: 15px 0;
-	font-size: 2.3rem;
+	font-size: 2.1rem;
 	letter-spacing: 0.1rem;
 	color: #400068;
 	font-family: 'Ubuntu Mono', monospace;
@@ -149,7 +150,7 @@ h2 {
 	font-weight: 700;
 }
 h3 {
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	margin: 5px 0;
 	line-height: 2rem;
 	/*padding: 15px 0;*/
@@ -205,6 +206,7 @@ call one of the classes pattenr or art and collapse the pattern on MQ with narro
   	grid-template-columns: 40% 60%;
   	padding: 0px;
 }
+/* does using grid mean problems w overflowing ??*/
 .section_parent_col {
 	/* flex seems better than grid here ? */
 	display: flex;
@@ -212,10 +214,11 @@ call one of the classes pattenr or art and collapse the pattern on MQ with narro
 	/*justify-content: space-evenly;*/
 	/*align-content: space-around;*/
 	/*width: 100%;*/
-	border: 1px red solid;
+	/*border: 1px red solid;*/
 	/*display: grid;*/
   	grid-template-columns: 70% 30%;
   	padding: 0px;
+  	width: 100%;
 }
 .section_parent {
 	display: flex;
@@ -223,7 +226,7 @@ call one of the classes pattenr or art and collapse the pattern on MQ with narro
 	justify-content: space-evenly;
 	align-content: space-around;
 	width: 100%;
-	/*border: 1px red solid;*/
+	/*border: 1px solid green;*/
 }
 .section_child {
 	position: relative;
@@ -327,7 +330,7 @@ or call it border1, borderRBL, as will need vert dividers in contact box & tech 
 */
 
 .box_basic_top_contact {
-	border: 3px solid blue;
+	/*border: 3px solid blue;*/
 	width: 100%;
 	padding: 15px 5px;
 	/* beige w 5% saturuadion e9eade, with 11%  E8EBD0, witih 15%  e5e8c5, 20% saturaiton is e5eabb*/
@@ -372,17 +375,19 @@ footer a {
 	text-decoration: none;
 }
 
-/* svg of my GH logo/avatar */
+/* svg of my GH logo/avatar - border is too tall compared to box_basics on left so they dont line up at the top */
 .logo_container {
-	background-color: white;
+	/*background-color: white;*/
 	width: 350px;
-	border: 4px solid #2F8890;
+	/*border: 4px solid #2F8890;*/
 }
 .logo_fill {
+	/* teal */
 	fill: #2F8890;
 }
+/* fill w beige ie bkg color */
 .logo_negative {
-	fill: white;
+	fill: #e9eade;
 }
 
 .square {
