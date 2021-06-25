@@ -4,136 +4,98 @@
   <meta charset="utf-8">
   <title>REDESIGN Portfolio Website for Davin Stirling</title>
   <link href="normalize.css" type="text/css" rel="stylesheet">
+  <!-- website looks horrible without stylesheet!  -->
   <link href="style.css" type="text/css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"> -->
-
-<!--   <style>
-	@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
-</style> -->
+  <!--  add font awesomem back in and see how GH octo logo looks?  -->
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">  -->
 </head>
 
 <body>
 	<div class="mainContainerGrid">
-<!-- Header & Navigation -->
+
+		<!-- Header & Navigation - if i get rid of top nav, shoudl i make h2 navs aswell? h2 are missing anchor tags! -->
 		<header>
-			<nav>
+			<!-- <nav>
 				<a href="#About">About</a>
 				<a href="#Portfolio">Portfolio</a>
 				<a href="#Skills">Skills</a>
 				<a href="#Contact">Contact</a>
-			</nav>
+			</nav> -->
 
 			<div class="accent_bkg"> 
-			<section class="layout__title">
-				<h1 class="section__title ">Davin Stirling</h1>
-				<!-- <p class="subtitle">Web Developer in UK & NZ</p> -->
-				<!-- <p class="subtitle">developer, detail orientated, diverse life experience</p> -->
-				<p class="subtitle">detail orientated web developer, with diverse life experience</p>
-			</section>
+				<section class="layout__title">
+					<h1 class="section__title ">Davin Stirling</h1>
+					<p class="subtitle">detail orientated web developer, with diverse life experience</p>
+				</section>
 			<div>
 		</header>
 
 		<main>
-			<!-- <section class="layout__title">
-				<h1 class="section__title ">Davin Stirling</h1>
-			</section> -->
-
-			<!-- Section: MyName & Background Picture -->
-			<!-- <section class="layout__title2">
-				<h2 class="section__title ">Title</h2>
-			</section> -->
-
 			
 			<div class="visual-separator width_20"> </div>
 
-<!-- Section About Me -->
+			<!-- Section About Me -->
 			<section class="layout__about-me">
 
-<!--  	What this means for us is that, when we place a heading inside a <summary>, we can style the heading’s appearance. But we cannot guarantee our heading will actually be interpreted as a heading!
+				<!--  	What this means for us is that, when we place a heading inside a <summary>, we can style the heading’s appearance. But we cannot guarantee our heading will actually be interpreted as a heading!
 
-In other words, it probably doesn’t hurt to put a heading there. It just may not always help
-can i add aria to h2 instead? . -->
+				In other words, it probably doesn’t hurt to put a heading there. It just may not always help 
+				Can i add aria to h2 instead? . -->
 				<details>
 					<summary>
-					<h2 class="section__title">About</h2>
+						<h2 class="section__title">About</h2>
 					</summary>
-				<div class="section_parent"> 
-					<!-- <div class="section_child box_basic_top">
-						basic
-					</div> -->
 
-					<!-- <div class="section_child">
-						<div class="box_basic_top">Background
+					<div class="section_parent"> 
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>Background</h3>
+							</div>
+							<div class="box_basic">
+								<p>Hiya, I'm Davin, an IT Professional with over 12 years experience pivoting into web development</p>
+								<p>I'm interested in backend technologies including GraphQL API, and keen to build on my experience wiht LAMP and MERN stacks.
+								<p>I'm eligible to work in the UK, where I'm currently based, and also in New Zealand where I lived for 12 years pre-covid</p>
+								<p>I'm open to new opportunities in 2021 - here's my Developer CV</p>
+							</div>
 						</div>
-						<div class="box_basic">IT Professional with over 12 years experience pivoting into web development
+
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>Qualifications</h3>
+							</div>
+							<div class="box_basic">
+								<p>Certified Scrum Master - 2020</p>
+								<p>Completed an intensive 4 month Full Stack Web Development Bootcamp - 2020</p>
+								<p>BSc (Hons) in Computer Science integrated with IBM UK</p>
+							</div>
 						</div>
-					</div> -->
-
-					<div class="section_child">
-						<div class="box_basic_top accent_bkg"><h3>Background</h3>
-						</div>
-						<div class="box_basic">
-							<p>IT Professional with over 12 years experience pivoting into web development</p>
-
-							<p>Interested in backend technologies and APIs like GraphQL.
-
-							<p>Eligible to work in the UK, where I'm currently based, and also in New Zealand</p>
-
-							<!-- Experienced IT Professional, pivoting into web development with an interest in backend technologies</p> -->
-
-							<!-- <p>Entitled to work in the UK & NZ, with over 12 years IT industry experience across both countries</p> -->
-
-							<p>Open to new opportunities in 2021 - here's my Developer CV</p>
-						</div>
-					</div>
-
-					<div class="section_child">
-						<div class="box_basic_top accent_bkg"><h3>Qualifications</h3>
-						</div>
-						<div class="box_basic">
-							<p>Certified Scrum Master - 2020</p>
-							<p>Completed intensive 16 week Full Stack Web Development Bootcamp - 2020</p>
-							<p>BSc (Hons) in Computer Science integrated with IBM UK</p>
-						</div>
-					</div>
 					
-					<!-- maybe look at how the craft agency site does their boxes? -->
-					<div class="section_child">
-						<div class="box_basic_top accent_bkg"><h3>Interests</h3>
-						</div>
-						<div class="box_basic">
-							<p>I'm interested in good design & architecture, psychology, sci-fi shows, travelling and making short films</p>
+						<!-- maybe look at how the craft agency site does their boxes? -->
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>Interests</h3>
+							</div>
+							<div class="box_basic">
+								<p>I'm interested in good design & architecture, psychology, sci-fi shows, travelling and making short films</p>
+							</div>
 						</div>
 					</div>
 
-				</div>
 				</details>
 			</section>
 			
+
 			<div class="visual-separator width_40"> </div>
 
-<!-- Section: Portfolio-->
+			<!-- Section: Portfolio-->
 			<section class="layout__portfolio">
 				<details>
 					<summary>
-					<h2 class="section__title ">Portfolio</h2>
+						<h2 class="section__title">Portfolio</h2>
 					</summary>
 				
 					<div class="section_parent"> 
-
-						<!-- <div class="section_child box_basic">
-							<div class="box_basic">image here
-							</div>
-							<div class="box_basic">Space Hack Night
-							</div>
-							<div class="box_basic">hjkhkjhk
-								sdflsdfhlkdsjf sdfkshdfjksdhf ds skdfsdkfysiduf  sdfkjsdgo;idg;pt perldf djkvzldkfdsidf 
-							</div>
-							<div class="box_basic">Tech & GH Icons
-							</div>
-						</div> -->
 
 						<div class="section_child">
 							<div class="box_basic_top accent_bkg">
@@ -141,34 +103,26 @@ can i add aria to h2 instead? . -->
 							</div>
 							<div class="box_basic">
 								<a href="wellbeing/default.html" target="_blank">
-								<img src="images/screenshot_core_gp.png" alt="Screenshot of Wellbeing Tracking Form website" class="portfolio-images">
+									<img src="images/screenshot_core_gp.png" alt="Screenshot of Wellbeing Tracking Form website" class="portfolio-images">
 								</a>
 							</div>
-							<!-- <div class="box_basic">
-								<h3>Form to Track Wellbeing</h3>
-							</div> -->
 							<div class="box_basic">
-								<!-- <h3>Form to Track Wellbeing</h3> -->
 								<p>I'm interested in psychology so decided to digitise  the GP-CORE form where you can answer questions about subjective wellbeing.</p>
 								<p>CORE Forms from the <a href="https://www.coresystemtrust.org.uk/">CORE Systems Trust</a> can be used to monitor changes in wellbeing over time in health care situations. There are different versions, like <a href="https://www.coresystemtrust.org.uk/wp-content/uploads/2020/03/GP-CORE-English.pdf">GP-CORE</a> for the General Population which has 14 questions.</p>
 								<details>
 									<!-- MORE in TEAL doesnt stand out so well, try making teal darker? 3.4 for Ally, but WAVE doesnt work on localhost atm!  -->
-								<summary>More</summary>
-								<p>After collecting the answers on the form, and storing them in the MySQL database, I plotted the overall score on a graph using the JpGraph library.</p>
-								<p>This app is built using the Slim 4 framework and MVC pattern, and is still a work in progress.
-								During May I have restructured the app into separate pages in a feature branch, and added register/login functionality. I'm currently working on protecting the routes with sessions</p>
-								<p>My biggest challenges have been working out how to better use the graph plotting library, learning more about using Git eg cherry picking & stashing in order to resolve certain branching issues I came across, and discovering that some tech isn't meant to work together - like trying to add JWT to my project without realising its only intended for APIs and I'd written a (small) monolith...</p>
+									<summary>More</summary>
+									<p>After collecting the answers on the form, and storing them in the MySQL database, I plotted the overall score on a graph using the JpGraph library.</p>
+									<p>This app is built using the Slim 4 framework and MVC pattern, and is still a work in progress.
+									During May I have restructured the app into separate pages in a feature branch, and added register/login functionality. I'm currently working on protecting the routes with sessions</p>
+									<p>My biggest challenges have been working out how to better use the graph plotting library, learning more about using Git eg cherry picking & stashing in order to resolve certain branching issues I came across, and discovering that some tech isn't meant to work together - like trying to add JWT to my project without realising its only intended for APIs and I'd written a (small) monolith...</p>
 								</details>
 							</div>
 							<div class="box_basic">
-								<p>PHP 
-									<span class="accent">|</span> 
-									Slim4 
-									<span class="accent">|</span> 
-									HMTL5 
-									<span class="accent">|</span> 
-									CSS3 
-									<span class="accent">|</span>
+								<p>PHP <span class="accent">|</span> 
+								Slim4 <span class="accent">|</span> 
+								HMTL5 <span class="accent">|</span> 
+								CSS3 <span class="accent">|</span>
 								<a href="http://bit.ly/ghCOREmvc" target="_blank"  aria-label="Link to GitHub Repo for Wellbeing Tracking Form">GitHub&nbspRepo
 									<i class="fab fa-github-square fa-3x" title="Wellbeing Tracking Form Repo"></i>
 								</a>
@@ -177,13 +131,12 @@ can i add aria to h2 instead? . -->
 						</div>
 
 						<div class="section_child">
-							<!-- <div class="box_basic_top">image here
-							</div> -->
-							<div class="box_basic_top accent_bkg"><h3>Space Flight Booking Site</h3>
+							<div class="box_basic_top accent_bkg">
+								<h3>Space Flight Booking Site</h3>
 							</div>
 							<div class="box_basic">
 								<a href="wellbeing/default.html" target="_blank">
-								<img src="images/space_hacknight.png" alt="Screenshot of Wellbeing Tracking Form website" class="portfolio-images">
+									<img src="images/space_hacknight.png" alt="Screenshot of Wellbeing Tracking Form website" class="portfolio-images">
 								</a>
 							</div>
 							<div class="box_basic">
@@ -193,190 +146,145 @@ can i add aria to h2 instead? . -->
 								<p>I want to finish my take on the site by adding suitable booking success & failure images and making them appear & disappear at the right time.</p>
 							</div>
 							<div class="box_basic">
-								<p>JavaScript 
-								<span class="accent">|</span>
-								HMTL5
-								<span class="accent">|</span>
-								CSS3
-								<span class="accent">|</span> 
+								<p>JavaScript <span class="accent">|</span>
+								HMTL5 <span class="accent">|</span>
+								CSS3 <span class="accent">|</span> 
 								<a href="https://github.com/davin2020/mini_hack_space" target="_blank"  aria-label="Link to GitHub Repo for Space Flight Booking Site">GitHub&nbspRepo
 									<i class="fab fa-github-square fa-3x" title="Wellbeing Tracking Form Repo"></i>
-									<!-- add GH logo but keep words -->
+									<!-- add GH logo here but keep words -->
 								</a>
 								</p>
 							</div>
 						</div>
 
-						<div class="section_child">
-							<div class="box_basic_top">image here
+						<!-- TEMPLATE for other prjoects - dont orget to update links!  -->
+						<!-- <div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>Project Template</h3>
 							</div>
-							<div class="box_basic">Space Hack Night
+							<div class="box_basic">
+								<a href="xxx" target="_blank">
+									<img src="images/xxx.png" alt="Screenshot of xxx" class="portfolio-images">
+								</a>
 							</div>
-							<div class="box_basic">hjkhkjhk
-								sdflsdfhlkdsjf sdfkshdfjksdhf ds skdfsdkfysiduf  sdfkjsdgo;idg;pt perldf djkvzldkfdsidf 
+							<div class="box_basic">
+								<p>xxx.</p>
+								<p>yyyy.</p>
+								<details>
+									<summary>More</summary>
+									<p>xxx</p>
+									<p>yyy</p>
+									<p>zzzz</p>
+								</details>
 							</div>
-							<div class="box_basic">Tech & GH Icons
-								<p>PHP 
-									<span class="accent">|</span>
-									Slim4 
-									<span class="accent">|</span>
-									HMTL5 
-									<span class="accent">|</span> 
-									CSS3 
-									<span class="accent">|</span> 
-								<a href="http://bit.ly/ghCOREmvc" target="_blank"  aria-label="Link to GitHub Repo for Wellbeing Tracking Form">GitHub&nbspRepo
-									<i class="fab fa-github-square fa-3x" title="Wellbeing Tracking Form Repo"></i>
+							<div class="box_basic">
+								<p>PHP <span class="accent">|</span> 
+								Slim4 <span class="accent">|</span> 
+								HMTL5 <span class="accent">|</span> 
+								CSS3 <span class="accent">|</span>
+								<a href="http://bit.ly/xxx" target="_blank"  aria-label="Link to GitHub Repo for xxx">GitHub&nbspRepo
+									<i class="fab fa-github-square fa-3x" title="xxxRepo"></i>
 								</a>
 								</p>
-
-								<br>
-								<div class="box_basic_top">PHP
-								</div>
-								<div class="box_basic_top">JS
-								</div>
 							</div>
-						</div>
-
+						</div> -->
 
 					</div>
 				</details>
 			</section>
 			
-<!-- Section: Skills-->
-			<div class="visual-separator width_60"> </div>
 
-<!-- <details>
-					<summary>
-					<h2 class="section__title ">Portfolio</h2>
-					</summary>
- -->
+			<!-- Section: Skills-->
+			<div class="visual-separator width_60"> </div>
 			
 			<section class="layout__skills ">	
 				<details>
 					<summary>
 						<h2 class="section__title ">Skills</h2>
 					</summary>
-
 					<div class="section_parent"> 
 
 						<div class="section_child">
 							<div class="box_basic_top">
-								<!-- <img src="images/screenshot_core_gp.png" alt="Screenshot of Wellbeing Tracking Form website" class="portfolio-images"> -->
-
-								<!-- <img src="images/davin_skills_cloud.png" class="portfolio-images"> -->
-
-								<img src="images/davin_skills_cloud2.png" class="portfolio-images">
-								
-								<!-- <img src="images/davin_skills_cloud3.png" class="portfolio-images"> -->
-								
+								<!-- <img src="images/davin_skills_cloud2.png" class="portfolio-images"> -->
+								<img src="images/davin_skills_cloud3.png" class="portfolio-images">
 							</div>
 							<div class="box_basic accent_bkg">
-LAMP
-<span class="accent">|</span>
-MERN
-<span class="accent">|</span>
-PHP7 including PHPUnit & Slim
-<span class="accent">|</span>
-JavaScript ES6 including Express
-<span class="accent">|</span>
-Node.js & React
-<span class="accent">|</span>
-GraphQL API
-<span class="accent">|</span>
-RESTful APIs & Postman
-<span class="accent">|</span>
-MongoDB & Compass & Atlas
-<span class="accent">|</span>
-MySQL
-<span class="accent">|</span>
-HTML5
-<span class="accent">|</span>
-CSS3
-<span class="accent">|</span>
-OOP,&nbspSOLID & MVC design
-principles
-<span class="accent">|</span>
-Git & GitHub
-<span class="accent">|</span>
-Docker
-<span class="accent">|</span>
-Scrum & Agile
-							</div>	
-							
+								<p class="skills">
+								LAMP <span class="accent">|</span>
+								MERN <span class="accent">|</span>
+								PHP7 including PHPUnit & Slim <span class="accent">|</span>
+								JavaScript ES6 including Express <span class="accent">|</span>
+								Node.js & React <span class="accent">|</span>
+								GraphQL API <span class="accent">|</span>
+								RESTful APIs & Postman <span class="accent">|</span>
+								MongoDB & Compass & Atlas <span class="accent">|</span>
+								MySQL <span class="accent">|</span>
+								HTML5 <span class="accent">|</span>
+								CSS3 <span class="accent">|</span>
+								OOP,&nbspSOLID & MVC design
+								principles <span class="accent">|</span>
+								Git & GitHub <span class="accent">|</span>
+								Docker <span class="accent">|</span>
+								Scrum & Agile</p>
+							</div>
 						</div>
 
 					</div>
 				</details>
 			</section>
 				
+
 			<div class="visual-separator width_80"> </div>
 
-<!-- Section: Contact-->
+			<!-- Section: Contact-->
 			<section class="layout__contact-me">	
 				<details>
 					<summary>
 						<h2 class="section__title ">Contact</h2>
 					</summary>
-
 					<div class="section_parent"> 
 						
-							<div class="section_parent_col"> 
-							
-									<!-- Background -->
-						<div class="box_basic_top_contact">
-							<div class="section_child">
-							<div class="box_basic_top accent_bkg">
-								<h3>Email</h3>
-							</div>
-							<div class="box_basic">
-								<!-- <p class="contactme">davin.stirling@gmail.com</p> -->
-								<a class="contactme" href="mailto:davin.stirling+portfolio@gmail.com?subject=Email from Portfolio site" aria-label="Email address for Davin is davin.stirling+portfolio@gmail.com">davin.stirling+portfolio@gmail.com</a>
-							</div>
-						</div>
+						<div class="section_parent_col"> 
 
-<!-- <div class="box_basic_top_contact"> -->
-										<div class="section_child">
-							<div class="box_basic_top accent_bkg">
-								<h3>GitHub Profile</h3>
-							</div>
-							<div class="box_basic">
-								<a href="https://github.com/davin2020/" target="_blank" aria-label="Link to GitHub account for Davin2020" class="contactme">https://github.com/davin2020
-								</a>
-							</div>
-						</div>
-
-									<!-- </div> -->
+							<div class="box_basic_top_contact">
+								<!-- do i need all these extra divs? -->
+								<div class="section_child">
+									<div class="box_basic_top accent_bkg">
+										<h3>Email</h3>
 									</div>
+									<div class="box_basic">
+										<a class="contactme" href="mailto:davin.stirling+portfolio@gmail.com?subject=Email from Portfolio site" aria-label="Email address for Davin is davin.stirling+portfolio@gmail.com">davin.stirling+portfolio@gmail.com</a>
+									</div>
+								</div>
 
-									
-									<div class="logo_container">
-						<!-- <svg height="350" width="350" viewBox="0 0 100 100"> -->
-							<svg height="100%" width="100%" viewBox="0 0 350 350" preserveAspectRatio="xMidYMid meet">
-								<!-- main big teal box -->
-								<rect x="50" y="50" width="250" height="200"  fill="#2F8890" class="logo_fill" />
-								<!-- white or beige cutouts -->
-								<rect x="100" y="49" width="50" height="50" stroke="#e9eade" fill="transparent"  class="logo_negative" />
-								<rect x="200" y="49" width="50" height="50" stroke="#e9eade" fill="transparent"  class="logo_negative" />
-								<rect x="150" y="200" width="50" height="50" stroke="#e9eade" fill="transparent"  class="logo_negative" />
-								<!-- teal entrance -->
-								<rect x="150" y="250" width="50" height="50" stroke="#2F8890" fill="transparent" class="logo_fill" />
-							</svg>
-						</div>
-
-								
+								<div class="section_child">
+									<div class="box_basic_top accent_bkg">
+										<h3>GitHub Profile</h3>
+									</div>
+									<div class="box_basic">
+										<a href="https://github.com/davin2020/" target="_blank" aria-label="Link to GitHub account for Davin2020" class="contactme">https://github.com/davin2020
+										</a>
+									</div>
+								</div>
 							</div>
-							<!-- <div class="section_parent_col">  -->
-									<!-- Background -->
-									<!-- <div>Email: davin.stirling@gmail.com</div>
-									<div>pattern</div> -->
-								
-							
+									
+							<div class="logo_container">
+								<svg height="100%" width="100%" viewBox="0 0 350 350" preserveAspectRatio="xMidYMid meet">
+									<!-- big teal box for castle shape -->
+									<rect x="50" y="50" width="250" height="200"  fill="#2F8890" class="logo_fill" />
+									<!-- square beige cutouts -->
+									<rect x="100" y="49" width="50" height="50" stroke="#e9eade" fill="transparent"  class="logo_negative" />
+									<rect x="200" y="49" width="50" height="50" stroke="#e9eade" fill="transparent"  class="logo_negative" />
+									<rect x="150" y="200" width="50" height="50" stroke="#e9eade" fill="transparent"  class="logo_negative" />
+									<!-- small teal entrance square -->
+									<rect x="150" y="250" width="50" height="50" stroke="#2F8890" fill="transparent" class="logo_fill" />
+								</svg>
+							</div>
+	
+						</div> <!-- end of section_parent_col -->
 
-						<!-- </div> -->
-
-
-						<!-- see how original site does boxes
-						-->
+						<!-- see how original site does boxes -->
 						<!-- <div class="section_child">
 							<div class="box_basic_top accent_bkg">
 								<p>Email: davin.stirling@gmail.com</p>
@@ -386,14 +294,12 @@ Scrum & Agile
 							</div>
 						</div> -->
 
-
-<!-- HIDE THIS -->
-					<!-- 	<div class="section_child">
+						<!-- HIDE THIS, but avatar has better flow as it goes under other boxes on narrow screens -->
+						<!-- <div class="section_child">
 							<div class="box_basic_top accent_bkg">
 								<h3>Email</h3>
 							</div>
 							<div class="box_basic">
-								
 								<a class="contactme" href="mailto:davin.stirling+portfolio@gmail.com?subject=Email from Portfolio site" aria-label="Email address for Davin is davin.stirling+portfolio@gmail.com">davin.stirling+portfolio@gmail.com</a>
 							</div>
 						</div>
@@ -410,17 +316,13 @@ Scrum & Agile
 
 						<div class="logo_container">
 							<svg height="100%" width="100%" viewBox="0 0 350 350" preserveAspectRatio="xMidYMid meet">
-								
 								<rect x="50" y="50" width="250" height="200"  fill="#2F8890" class="logo_fill" />
-								
 								<rect x="100" y="49" width="50" height="50" stroke="white" fill="transparent"  class="logo_negative" />
 								<rect x="200" y="49" width="50" height="50" stroke="white" fill="transparent"  class="logo_negative" />
 								<rect x="150" y="200" width="50" height="50" stroke="white" fill="transparent"  class="logo_negative" />
-								
 								<rect x="150" y="250" width="50" height="50" stroke="#2F8890" fill="transparent" class="logo_fill" />
 							</svg>
 						</div> -->
-
 
 					</div>
 				</details>
@@ -429,94 +331,7 @@ Scrum & Agile
 			<!-- could make divider same color as bkg if need more bottom margin only? -->
 			<div class="visual-separator width_100"> </div>
 
-<!-- Section: Contact-->
-			<section class="layout__contact-me ">
-				<h2 class="section__title ">Contact Test</h2>
-
-<div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <h2>Column 1</h2>
-    <p>Some text..</p>
-  </div>
-  <div class="column" style="background-color:#bbb;">
-    <h2>Column 2</h2>
-    <p>Some text..</p>
-  </div>
-</div>
-
-				xxx
-				<div class="section_parent_col"> 
-					<!-- <div class="section_child"> -->
-						<div class="box_basic_top_contact">
-							<div class="box_basic_top_contact">
-								<div class="section_parent_col"> 
-									<!-- Background -->
-									<div>Email: davin.stirling@gmail.com</div>
-									<div>pattern</div>
-								</div>
-								
-							</div>
-
-							<div class="box_basic_top_contact">
-								<div class="section_parent_col_4060"> 
-									<!-- Background -->
-									<div>pattern</div>
-									<div>GitHub Profile: https://github.com/davin2020</div>
-								</div>
-								
-							</div>
-						</div>
-						<!-- need 2 boxes or divs to make 2 cols work! -->
-						<div class="box_basic_top_contact grid_contact">
-						
-
-						<div class="logo_container">
-						<!-- <svg height="350" width="350" viewBox="0 0 100 100"> -->
-							<svg height="100%" width="100%" viewBox="0 0 350 350" preserveAspectRatio="xMidYMid meet">
-								<!-- main big teal box -->
-								<rect x="50" y="50" width="250" height="200"  fill="#2F8890" class="logo_fill" />
-								<!-- white cutouts -->
-								<rect x="100" y="49" width="50" height="50" stroke="white" fill="transparent"  class="logo_negative" />
-								<rect x="200" y="49" width="50" height="50" stroke="white" fill="transparent"  class="logo_negative" />
-								<rect x="150" y="200" width="50" height="50" stroke="white" fill="transparent"  class="logo_negative" />
-								<!-- teal entrance -->
-								<rect x="150" y="250" width="50" height="50" stroke="#2F8890" fill="transparent" class="logo_fill" />
-							</svg>
-						</div>
-
-						</div>
-					<!-- </div> -->
-				</div>
-
-
-
-				xx
-				<div class="section_parent"> 
-					<div class="section_child_row">
-						<div class="box_basic_top">
-						<div class="box_basic_top">Background
-						</div>
-
-						<div class="box_basic">IT Professional with over 12 years experience pivoting into web development
-						</div>
-						</div>
-					</div>
-
-					<div class="section_child_col">
-						<div class="box_basic_top">
-						<div class="box_basic_top">Background
-						</div>
-						<div class="box_basic_top">sfsdfsdf Background
-						</div>
-						<div class="box_basic">IT Professional with over 12 years experience pivoting into web development
-						</div>
-						</div>
-					</div>
-				</div>
-			</section>
-	
 		</main>
-
 
 		<footer>
 			<a href="#About">About</a> |
@@ -529,3 +344,5 @@ Scrum & Agile
 	</div>
 </body>
 </html>
+
+<!-- 533 lines, now 346 lines, could be 40 line less once contact stuff sorted  -->
