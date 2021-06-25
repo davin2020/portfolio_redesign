@@ -1,0 +1,395 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');*/
+/*<style>*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+/*</style>*/
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	/* beige w 5% saturuadion e9eade, with 11%  E8EBD0 original, witih 15%  e5e8c5, 20% saturaiton is e5eabb*/
+	background-color: #e9eade ;
+	font-family: Verdana;
+	font-size: 1rem;
+	/*seting thsi here make the h3 headings too close when the longer lines wrap*/
+	/*line-height: 1.4rem;*/
+	color: #400068;
+}
+
+
+/*Accessible Accordion
+https://www.hassellinclusion.com/blog/accessible-accordions-part-2-using-details-summary/*/
+
+details summary { 
+  cursor: pointer;
+  /* will show little twisty arrow next to item */
+  display:list-item;
+  /*doesnt show little arrow next to item */
+  /*display: flex; */
+ 	/*background-color: white;*/
+ 	/*this changes the color of the twisty triangle teal */
+ 	color: #2F8890 ;
+}
+
+/*. First, I recommend using inline, and not inline-block, as the line wrapping issue still occurs with inline-block when the heading text extends beyond one line.*/
+details summary > * {
+  display: inline;
+}
+
+/*
+details  div {
+	this applies padding to ALL/each div within details
+if i add the > symbol, then it applies to direct descendants only?
+*/
+
+details > div {
+  /*border: 2px dashed black;*/
+  margin-top: 0;
+  padding: 1rem;
+}
+
+/*summary:hover {
+	 color: black;
+}*/
+
+.mainContainerGrid {
+	/*margin-left: 5px*/
+}
+@media screen and (min-width: 1080px) {
+	.mainContainerGrid {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+main {
+	/*border: 2px solid yellow;*/
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+
+header {
+	text-align: center;
+	/*font-size: 1.2rem;*/
+}
+
+nav {
+	padding: 20px;
+	background-color: #400068 ;
+	color: #FFFFFF;
+	font-family: 'Ubuntu Mono', monospace;
+	/*font-family: 'Courier New', 'AppleChancery','LucidaCallig','ITC Zapf Chancery','URW Chancery L',cursive;*/
+	/*font-size: 175%;*/
+	font-weight: bold;
+	/*font looks squahsed when i set size in nav rather than in nav a*/
+	/*font-size: 2.3rem;*/
+	/*letter-spacing: 0.1rem;*/
+	/* maybe add some kerning and more line height than in body */
+	/*this helps items on 2 lines not be on top of each other! */
+	/*line-height: 2rem;*/ 
+
+}
+
+nav a {
+	padding: 15px;
+	color: #E8EBD0  ;
+	text-decoration: none;
+	letter-spacing: 0.2rem;
+	font-size: 2rem;
+	/*text-align: center;*/
+}
+
+nav a:hover {
+	background-color: #170B3B ;
+}
+
+p {
+	line-height: 1.4rem;
+}
+
+/*margin isnt affecting anyting visualy, not sure why - pading isnt doing much either, only box_basic css is being applied  */
+.contactme {
+	font-size: 1.1rem;
+	color: #400068;
+	padding: 15px;
+	/*margin: 10px;*/
+	text-decoration: none;
+	display: block;
+}
+.contactme:hover {
+	/*font-size: 1.2rem;*/
+	/*color: #E8EBD0;*/
+	background-color: #2F8890 ;
+	padding: 15px;
+	/*margin: 10px;*/
+	color: #E8EBD0 ;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 4.2rem;
+	letter-spacing: 0.1rem;
+	color: #E8EBD0;
+	font-family: 'Ubuntu Mono', monospace;
+	font-weight: 700;
+	margin: 40px 10px;
+}
+h2 {
+	margin: 10px;
+	padding: 15px 0;
+	font-size: 2.1rem;
+	letter-spacing: 0.1rem;
+	color: #400068;
+	font-family: 'Ubuntu Mono', monospace;
+	/*font-size: 700;*/
+	font-weight: 700;
+}
+h3 {
+	font-size: 1.4rem;
+	margin: 5px 0;
+	line-height: 2rem;
+	/*padding: 15px 0;*/
+}
+
+.accent {
+	color: #2F8890;
+	font-style: bold;
+	font-size: 1.4rem;
+	vertical-align: center;
+}
+.accent_bkg {
+	/*  e5e8c5 */
+	background-color: #e5e8c5;
+}
+
+.subtitle {
+	color: #E8EBD0;
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 1.7rem;
+}
+section {
+	/*border: 1px solid green;*/
+}
+
+div {
+	/*padding: 0px;*/
+	/*border: 2px solid yellow;*/
+}
+
+.layout__title {
+	width: 100%;
+	background-color: #400068;
+	padding: 10px;
+	margin-top: 10px;
+	/*padding-top: 10px;*/
+	/*accent_bkg*/
+	/*margin: 10px;*/
+}
+
+/* still need some MQ for these for smaller screens, otherwise logo overflows, need to shrink instead of overflow=hidden, other options dont work well either!  - need to make pattern boxes hidden, or maybe make the wholel left side a flex instead of a grid?
+
+call one of the classes pattenr or art and collapse the pattern on MQ with narrow browsers etc
+ */
+.section_parent_col_4060 {
+	display: grid;
+	/*flex-wrap: wrap;*/
+	/*justify-content: space-evenly;*/
+	/*align-content: space-around;*/
+	/*width: 100%;*/
+	border: 1px red solid;
+	/*display: grid;*/
+  	grid-template-columns: 40% 60%;
+  	padding: 0px;
+}
+/* does using grid mean problems w overflowing ??*/
+.section_parent_col {
+	/* flex seems better than grid here ? */
+	display: flex;
+	/*flex-wrap: wrap;*/
+	/*justify-content: space-evenly;*/
+	/*align-content: space-around;*/
+	/*width: 100%;*/
+	/*border: 1px red solid;*/
+	/*display: grid;*/
+  	grid-template-columns: 70% 30%;
+  	padding: 0px;
+  	width: 100%;
+}
+.section_parent {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: space-around;
+	width: 100%;
+	/*border: 1px solid green;*/
+}
+.section_child {
+	position: relative;
+	/*padding: 20px;*/ /* pad within item */
+	margin: 10px; /* space arou nd/between other items */
+	flex: 1 1 350px;
+	text-align: center;
+
+	/* need this to flex & center items, so that tech icons stay at bottom */
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* need this as some pics in flex are not being centered properly */
+	
+}
+.section_child_row {
+	position: relative;
+	display: grid;
+	flex-direction: row;
+}
+
+.section_child_col {
+	position: relative;
+	display: grid;
+	flex-direction: column;
+	grid-template-columns: 50% 50%;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.column {
+  flex: 50%;
+}
+
+/* perhaps add an arrow pointing right at end of each separator? */
+.visual-separator {
+		/*border: 5px solid #000000;  1C384A */
+		border-top: 10px solid #400068;
+		/*width: 80%;*/
+		align-items: center;
+		align-content: center;
+		align-self: center;
+		/*this only gives space above teh separator itself, so maybe need to place it insdie its own div?*/
+		margin: 20px 0px;
+		/*text-align: center;*/
+		/*margin-bottom: 10px;*/
+}
+
+.width_20 {
+	width: 20%;
+}
+.width_30 {
+	width: 30%;
+}
+.width_40 {
+	width: 40%;
+}
+.width_50 {
+	width: 50%;
+}
+.width_60 {
+	width: 60%;
+}
+.width_70 {
+	width: 70%;
+}
+.width_80 {
+	width: 80%;
+}
+.width_90 {
+	width: 90%;
+}
+
+.portfolio-images {
+	max-width: 100%;
+	border-radius: 20px;
+	/* show a transparent border around clickable images, so when border is shown on hover it doesnt make text below image jump */
+	border: 8px solid rgba(87, 24, 103, 0);
+}
+a:hover .portfolio-images {
+	border-radius: 20px;
+	/* show an opaque border around clickable images on hover */
+	border: 8px solid  #2F8890;
+	/*border: 7px solid rgba(87, 24, 103, 1);*/
+}
+
+
+/*
+or try names like
+box_border_title
+box_border_full
+box_border_rbl or box_border_right_bottom_left
+box_image
+box_title x2 
+box_blurb or box_content x2
+box_icons
+
+or call it border1, borderRBL, as will need vert dividers in contact box & tech icons
+*/
+
+.box_basic_top_contact {
+	/*border: 3px solid blue;*/
+	width: 100%;
+	padding: 15px 5px;
+	/* beige w 5% saturuadion e9eade, with 11%  E8EBD0, witih 15%  e5e8c5, 20% saturaiton is e5eabb*/
+	overflow: none;
+	
+}
+.box_basic_top {
+	border: 3px solid #400068;
+	width: 100%;
+	padding: 15px;
+	/* beige w 5% saturuadion e9eade, with 11%  E8EBD0, witih 15%  e5e8c5, 20% saturaiton is e5eabb*/
+	
+}
+.box_basic {
+	border-right: 3px solid #400068;
+	border-bottom: 3px solid #400068;
+	border-left: 3px solid #400068;
+	
+	
+	/*border: 2px solid #400068;*/
+	width: 100%;
+	padding: 15px;
+	/*border-top: 0px solid black;*/
+}
+.box_blurb {
+
+}
+
+.box_project {
+
+}
+
+footer {
+	text-align: center;
+	padding: 15px ;
+	font-size: 80%;
+	background-color: #400068;
+	color: #E8EBD0  ;
+}
+footer a {
+	color: #E8EBD0  ;
+	text-decoration: none;
+}
+
+/* svg of my GH logo/avatar - border is too tall compared to box_basics on left so they dont line up at the top */
+.logo_container {
+	/*background-color: white;*/
+	width: 350px;
+	/*border: 4px solid #2F8890;*/
+}
+.logo_fill {
+	/* teal */
+	fill: #2F8890;
+}
+/* fill w beige ie bkg color */
+.logo_negative {
+	fill: #e9eade;
+}
+
+.square {
+
+}
