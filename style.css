@@ -1,17 +1,19 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');*/
-/*<style>*/
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
-/*</style>*/
 
-
+/* consider SCSS that compiles into CSS so i can use variable names for colors etc - add MQs ! */
 * {
 	box-sizing: border-box;
 }
 
+/* COLORS
+beige w 5% saturuadion e9eade, with 11%  E8EBD0 original, witih 15%  e5e8c5, 20% saturaiton is e5eabb
+teal  #2F8890
+purple  #400068
+*/
+
 body {
 	padding: 0;
 	margin: 0;
-	/* beige w 5% saturuadion e9eade, with 11%  E8EBD0 original, witih 15%  e5e8c5, 20% saturaiton is e5eabb*/
 	background-color: #e9eade ;
 	font-family: Verdana;
 	font-size: 1rem;
@@ -20,18 +22,18 @@ body {
 	color: #400068;
 }
 
-
+/* ACCORDIN OR EXPANDING SECTIONS */
 /*Accessible Accordion
 https://www.hassellinclusion.com/blog/accessible-accordions-part-2-using-details-summary/*/
 
 details summary { 
-  cursor: pointer;
-  /* will show little twisty arrow next to item */
-  display:list-item;
-  /*doesnt show little arrow next to item */
-  /*display: flex; */
+	cursor: pointer;
+	/* will show little twisty arrow next to item */
+	display: list-item;
+	/*doesnt show little arrow next to item */
+	/*display: flex; */
  	/*background-color: white;*/
- 	/*this changes the color of the twisty triangle teal */
+ 	/*this changes the color of the twisty triangle to teal 2F8890 or purple 400068 */
  	color: #2F8890 ;
 }
 
@@ -52,8 +54,9 @@ details > div {
   padding: 1rem;
 }
 
+/*this would work but h2 over rides it - so added :hover to h2; */
 /*summary:hover {
-	 color: black;
+	 color: #2F8890;
 }*/
 
 .mainContainerGrid {
@@ -67,15 +70,13 @@ details > div {
 }
 
 main {
-	/*border: 2px solid yellow;*/
+	/*need some space before twisy triangles on narrower screens */
 	margin-left: 10px;
 	margin-right: 10px;
-
 }
 
 header {
 	text-align: center;
-	/*font-size: 1.2rem;*/
 }
 
 nav {
@@ -83,16 +84,9 @@ nav {
 	background-color: #400068 ;
 	color: #FFFFFF;
 	font-family: 'Ubuntu Mono', monospace;
-	/*font-family: 'Courier New', 'AppleChancery','LucidaCallig','ITC Zapf Chancery','URW Chancery L',cursive;*/
-	/*font-size: 175%;*/
 	font-weight: bold;
-	/*font looks squahsed when i set size in nav rather than in nav a*/
-	/*font-size: 2.3rem;*/
-	/*letter-spacing: 0.1rem;*/
-	/* maybe add some kerning and more line height than in body */
 	/*this helps items on 2 lines not be on top of each other! */
 	/*line-height: 2rem;*/ 
-
 }
 
 nav a {
@@ -100,6 +94,7 @@ nav a {
 	color: #E8EBD0  ;
 	text-decoration: none;
 	letter-spacing: 0.2rem;
+	/*font looks squahsed when i set size in nav rather than in nav a */
 	font-size: 2rem;
 	/*text-align: center;*/
 }
@@ -112,25 +107,37 @@ p {
 	line-height: 1.4rem;
 }
 
-/*margin isnt affecting anyting visualy, not sure why - pading isnt doing much either, only box_basic css is being applied  */
+.skills {
+	font-size: 1.2rem;
+}
+/*margin isnt affecting anyting visualy, not sure why - padding isnt doing much either, only box_basic css is being applied  */
 .contactme {
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	color: #400068;
 	padding: 15px;
-	/*margin: 10px;*/
 	text-decoration: none;
 	display: block;
+	width: 100%;
+	word-wrap: break-word;
+	/* ths is over flowing instead of wrapping cos its considerd one long word ie email addres or GH url ! could also add MQ to amke font smaller - both of these options seem to work ok */
+	/*overflow-wrap: break-word; */
 }
 .contactme:hover {
-	/*font-size: 1.2rem;*/
-	/*color: #E8EBD0;*/
 	background-color: #2F8890 ;
 	padding: 15px;
-	/*margin: 10px;*/
 	color: #E8EBD0 ;
 	text-decoration: none;
 }
 
+/*@media screen and (max-width: 400px) {
+	.contactme {
+		font-size: 1rem;
+		width: 80%;
+		/*margin: 0 auto;*/
+	}
+}*/
+
+/* HEADERS AND FONTS */
 h1 {
 	font-size: 4.2rem;
 	letter-spacing: 0.1rem;
@@ -142,12 +149,15 @@ h1 {
 h2 {
 	margin: 10px;
 	padding: 15px 0;
-	font-size: 2.1rem;
+	font-size: 2.2rem;
 	letter-spacing: 0.1rem;
 	color: #400068;
 	font-family: 'Ubuntu Mono', monospace;
-	/*font-size: 700;*/
 	font-weight: 700;
+}
+/* change teal in order to increase color contrast for WAVE? */
+h2:hover {
+	color: #2F8890;
 }
 h3 {
 	font-size: 1.4rem;
@@ -163,7 +173,6 @@ h3 {
 	vertical-align: center;
 }
 .accent_bkg {
-	/*  e5e8c5 */
 	background-color: #e5e8c5;
 }
 
@@ -191,9 +200,9 @@ div {
 	/*margin: 10px;*/
 }
 
+/* FLEX BOX GRID STUFF */
 /* still need some MQ for these for smaller screens, otherwise logo overflows, need to shrink instead of overflow=hidden, other options dont work well either!  - need to make pattern boxes hidden, or maybe make the wholel left side a flex instead of a grid?
-
-call one of the classes pattenr or art and collapse the pattern on MQ with narrow browsers etc
+maybe call one of the classes pattern or art and collapse the pattern on MQ with narrow browsers etc
  */
 .section_parent_col_4060 {
 	display: grid;
@@ -201,12 +210,12 @@ call one of the classes pattenr or art and collapse the pattern on MQ with narro
 	/*justify-content: space-evenly;*/
 	/*align-content: space-around;*/
 	/*width: 100%;*/
-	border: 1px red solid;
+	/*border: 1px red solid;*/
 	/*display: grid;*/
   	grid-template-columns: 40% 60%;
   	padding: 0px;
 }
-/* does using grid mean problems w overflowing ??*/
+/* does using grid cause the problems w overflowing ?? */
 .section_parent_col {
 	/* flex seems better than grid here ? */
 	display: flex;
@@ -234,12 +243,10 @@ call one of the classes pattenr or art and collapse the pattern on MQ with narro
 	margin: 10px; /* space arou nd/between other items */
 	flex: 1 1 350px;
 	text-align: center;
-
 	/* need this to flex & center items, so that tech icons stay at bottom */
 	display: flex;
 	flex-direction: column;
 	align-items: center; /* need this as some pics in flex are not being centered properly */
-	
 }
 .section_child_row {
 	position: relative;
@@ -263,6 +270,7 @@ call one of the classes pattenr or art and collapse the pattern on MQ with narro
   flex: 50%;
 }
 
+/* VISUAL HR */
 /* perhaps add an arrow pointing right at end of each separator? */
 .visual-separator {
 		/*border: 5px solid #000000;  1C384A */
@@ -305,7 +313,7 @@ call one of the classes pattenr or art and collapse the pattern on MQ with narro
 .portfolio-images {
 	max-width: 100%;
 	border-radius: 20px;
-	/* show a transparent border around clickable images, so when border is shown on hover it doesnt make text below image jump */
+	/* show a transparent border around clickable images, so when border is shown on hover it doesnt make content below image jump */
 	border: 8px solid rgba(87, 24, 103, 0);
 }
 a:hover .portfolio-images {
@@ -316,6 +324,7 @@ a:hover .portfolio-images {
 }
 
 
+/* BORDERS */
 /*
 or try names like
 box_border_title
@@ -333,7 +342,6 @@ or call it border1, borderRBL, as will need vert dividers in contact box & tech 
 	/*border: 3px solid blue;*/
 	width: 100%;
 	padding: 15px 5px;
-	/* beige w 5% saturuadion e9eade, with 11%  E8EBD0, witih 15%  e5e8c5, 20% saturaiton is e5eabb*/
 	overflow: none;
 	
 }
@@ -348,8 +356,6 @@ or call it border1, borderRBL, as will need vert dividers in contact box & tech 
 	border-right: 3px solid #400068;
 	border-bottom: 3px solid #400068;
 	border-left: 3px solid #400068;
-	
-	
 	/*border: 2px solid #400068;*/
 	width: 100%;
 	padding: 15px;
@@ -375,6 +381,7 @@ footer a {
 	text-decoration: none;
 }
 
+/* GH Logo Avatar */
 /* svg of my GH logo/avatar - border is too tall compared to box_basics on left so they dont line up at the top */
 .logo_container {
 	/*background-color: white;*/
@@ -393,3 +400,8 @@ footer a {
 .square {
 
 }
+/*what does it do, or what is it?*/
+eg header vs blue header?
+BEM Block Element Modifier
+
+/* 395 lines */
