@@ -117,6 +117,10 @@ p {
 	padding: 15px;
 	text-decoration: none;
 	display: block;
+	width: 100%;
+	word-wrap: break-word;
+	/* ths is over flowing instead of wrapping cos its considerd one long word ie email addres or GH url ! could also add MQ to amke font smaller - both of these options seem to work ok */
+	/*overflow-wrap: break-word; */
 }
 .contactme:hover {
 	background-color: #2F8890 ;
@@ -124,6 +128,14 @@ p {
 	color: #E8EBD0 ;
 	text-decoration: none;
 }
+
+/*@media screen and (max-width: 400px) {
+	.contactme {
+		font-size: 1rem;
+		width: 80%;
+		/*margin: 0 auto;*/
+	}
+}*/
 
 /* HEADERS AND FONTS */
 h1 {
@@ -198,7 +210,7 @@ maybe call one of the classes pattern or art and collapse the pattern on MQ with
 	/*justify-content: space-evenly;*/
 	/*align-content: space-around;*/
 	/*width: 100%;*/
-	border: 1px red solid;
+	/*border: 1px red solid;*/
 	/*display: grid;*/
   	grid-template-columns: 40% 60%;
   	padding: 0px;
@@ -388,4 +400,8 @@ footer a {
 .square {
 
 }
+/*what does it do, or what is it?*/
+eg header vs blue header?
+BEM Block Element Modifier
+
 /* 395 lines */
