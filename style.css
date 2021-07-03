@@ -315,6 +315,7 @@ maybe call one of the classes pattern or art and collapse the pattern on MQ with
 	border-radius: 20px;
 	/* show a transparent border around clickable images, so when border is shown on hover it doesnt make content below image jump */
 	border: 8px solid rgba(87, 24, 103, 0);
+	max-height: 300px;
 }
 a:hover .portfolio-images {
 	border-radius: 20px;
